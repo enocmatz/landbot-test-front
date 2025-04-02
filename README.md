@@ -73,10 +73,10 @@ This separation is managed through React Context, allowing for:
 
 ## Testing
 
-The project is designed with testing in mind. The separation of component usage and rendering allows for:
+The project is designed with testing in mind. The separation of component usage and rendering allows for [Current not implemented]:
 - Mocking of Landbot interactions
 - Testing without consuming chat credits
-- Isolated testing of business logic and presentation
+- Isolated testing of business logic and presentation 
 
 ## Security Considerations
 
