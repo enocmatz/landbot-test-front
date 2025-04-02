@@ -1,0 +1,165 @@
+.bubble-card button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin-left: 2px;
+  }
+  
+  .bubble-card button:hover:enabled {
+    border-color: #646cff;
+  }
+  .bubble-card button:focus,
+  .bubble-card button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  .bubble-card button.selected {
+    background-color: #646cff;
+    color: #fff;
+  }
+  .bubble-card input {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    color: #fff;
+    transition: border-color 0.25s;
+  }
+  
+  .bubble-card button.field-send-button {
+    opacity: 1;
+    transition: opacity 1s, transform 1s;
+  }
+  .bubble-card button.field-send-button:disabled {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  
+  
+  .bubble-card input.valid {
+    border-color: #2ac71e;
+  }
+  .bubble-card input.invalid {
+    border-color: #ff0000;
+  }
+  
+  .bubble-card input:hover:enabled {
+    border-color: #646cff;
+  }
+  
+  .bubble-container {
+    width: 60vb;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: left;
+    gap: 15px;
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #242424;
+  
+  }
+  
+  .bubble-card {
+    justify-content: space-between;
+    align-items: left;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+    opacity: 0%;
+    transform: scale(0);
+    animation-fill-mode: forwards;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #464444ae;
+    border: 1px transparent #646cff;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .bubble-entering {
+    animation: bubbleIn 0.6s ease forwards;
+  }
+  
+  .bubble-card pre {
+    background-color: #1a1a1a;
+    padding: 10px;
+    border-radius: 10px;
+    text-wrap: wrap;
+    overflow-y: auto;
+  }
+  
+  .card {
+    padding: 2em;
+  }
+
+  
+  @keyframes bubbleIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+.drag-drop-box {
+    border: 2px dashed #646cff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.drag-drop-box.dragging {
+    border-color: #2ac71e;
+    background-color: #1a1a1a;
+}
+
+.drag-drop-box.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.drag-drop-content {
+    color: #fff;
+}
+
+.drag-drop-content p {
+    margin: 5px 0;
+}
+
+.drag-drop-content .subtext {
+    color: #888;
+    font-size: 0.9em;
+}
+
+
+.loading-container .loading-spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #646cff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
